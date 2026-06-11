@@ -26,4 +26,8 @@ resource "aws_launch_template" "swiggy-web-template" {
     prevent_destroy = true
     ignore_changes  = all
   }
+
+  tags  =  {
+    Name  = "Swiggy-Web-Server"
+  }
 }
